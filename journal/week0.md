@@ -1,7 +1,8 @@
 # Week 0 — Billing and Architecture
 
- - ***Below are the activities assigned as part of week 0 of the Bootcamp. A brief documentation of each activity and evidence of each  as appropriate.*****
- **- Security considerations were taken into account in the user creation process (MFA), the "Authy" application was selected for token management due to its multi-device facility.**
+ - ***Below are the activities assigned as part of week 0 of the Bootcamp. A brief documentation of each activity and evidence of each  as appropriate.***
+ 
+ - ***Security considerations were taken into account in the user creation process (MFA), the "Authy" application was selected for token management due to its multi-device facility.***
 
  **1. Create of the Admin user.**
 
@@ -98,5 +99,9 @@ tasks:
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
+   
+**8 Practica aplicación Lucidchart**
+
+[Logical Design](https://lucid.app/lucidchart/6e9d3d7b-97f3-44cb-8925-5d2b77fe1210/edit?viewport_loc=-163,-33,2219,1067,0_0&invitationId=inv_0808bc66-fb91-4d12-9665-23022966baa6)
 
 **Note: You can see GipPod button in the repository**
