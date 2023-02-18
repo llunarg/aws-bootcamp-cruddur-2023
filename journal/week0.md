@@ -99,9 +99,11 @@ tasks:
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
+    
+**Note: You can see GipPod button in the repository**
    
 **8 Practica aplicación Lucidchart**
 
-[Logical Design](https://lucid.app/lucidchart/6e9d3d7b-97f3-44cb-8925-5d2b77fe1210/edit?viewport_loc=-163,-33,2219,1067,0_0&invitationId=inv_0808bc66-fb91-4d12-9665-23022966baa6)
+[Logical Design](https://lucid.app/lucidchart/6e9d3d7b-97f3-44cb-8925-5d2b77fe1210/edit?viewport_loc=-163%2C-33%2C2219%2C1067%2C0_0&invitationId=inv_0808bc66-fb91-4d12-9665-23022966baa6)
 
-**Note: You can see GipPod button in the repository**
+
