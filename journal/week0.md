@@ -1,6 +1,9 @@
 # Week 0 — Billing and Architecture
 
- **1. Creation of the Admin user.**
+ - ***Below are the activities assigned as part of week 0 of the Bootcamp. A brief documentation of each activity and evidence of each  as appropriate.*****
+ **- Security considerations were taken into account in the user creation process (MFA), the "Authy" application was selected for token management due to its multi-device facility.**
+
+ **1. Create of the Admin user.**
 
 The "admin" user has special privileges within the AWS platform. An AWS Identity and Access Management (IAM) user is an entity that you create in AWS. The IAM user represents the human user or workload who uses the IAM user to interact with AWS. A user in AWS consists of a name and credentials. An IAM user with administrator permissions is not the same thing as the AWS account root user. You can use the AWS Management Console to create IAM users.
 
@@ -43,5 +46,57 @@ AWS requires different types of security credentials, depending on how you acces
 
 ![Access keys](https://github.com/llunarg/aws-bootcamp-cruddur-2023/blob/main/journal/assets/3%20Generate%20AWS%20Credentials.png)
 
+**4. Installed AWS CLI**
 
+The AWS Command Line Interface (AWS CLI) is an open source tool that enables you to interact with AWS services using commands in your command-line shell. With minimal configuration, the AWS CLI enables you to start running commands that implement functionality equivalent to that provided by the browser-based AWS Management Console from the command prompt in your terminal program.
 
+**Install or update the AWS CLI**
+
+To update your current installation of AWS CLI, download a new installer each time you update to overwrite previous versions. Follow these steps from the command line to install the AWS CLI on Linux.
+
+[Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+**5. Create a Billing Alarm**
+
+You can monitor your estimated AWS charges by using Amazon CloudWatch. When you enable the monitoring of estimated charges for your AWS account, the estimated charges are calculated and sent several times daily to CloudWatch as metric data.
+
+Billing metric data is stored in the US East (N. Virginia) Region and represents worldwide charges. This data includes the estimated charges for every service in AWS that you use, in addition to the estimated overall total of your AWS charges.
+
+The alarm triggers when your account billing exceeds the threshold you specify. It triggers only when the current billing exceeds the threshold. It doesn't use projections based on your usage so far in the month.
+
+If you create a billing alarm at a time when your charges have already exceeded the threshold, the alarm goes to the ALARM state immediately.
+
+In this procedure, you create an alarm that sends a notification when your estimated charges for AWS exceed a defined threshold.
+
+[Creating a billing alarm to monitor your estimated AWS charges
+](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#creating_billing_alarm_with_wizard)
+
+![My billing Alarm](https://github.com/llunarg/aws-bootcamp-cruddur-2023/blob/main/journal/assets/5%20Create%20a%20Billing%20Alarm.png)
+
+**6 Create a Budget**
+
+You can create budgets to track and take action on your costs and usage. You can also create budgets to track your aggregate Reserved Instance (RI) and Savings Plans utilization and coverage. By default, single accounts, the management account, and member accounts in an organization can create budgets.
+
+When you create a budget, AWS Budgets provides a Cost Explorer graph to help you see your incurred costs and usage. If you didn't enable Cost Explorer yet, this graph is blank and AWS Budgets will enable Cost Explorer when you create your first budget. You can create your budget without enabling Cost Explorer. It can take up to 24 hours for this graph to appear after you or AWS Budgets enable Cost Explorer.
+
+[Creating a cost budget](https://docs.aws.amazon.com/cost-management/latest/userguide/create-cost-budget.html)
+
+![My budget](https://github.com/llunarg/aws-bootcamp-cruddur-2023/blob/main/journal/assets/6%20Create%20a%20Budget.png)
+
+**7. GipPod Credentials Configuration**
+
+tasks:
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
+      cd /workspace
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -or "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install
+      cd $THEIA_WORKSPACE_ROOT
+vscode:
+  extensions:
+    - 42Crunch.vscode-openapi
+
+**Note: You can see GipPod button in the repository**
